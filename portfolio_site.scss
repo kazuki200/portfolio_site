@@ -1,0 +1,168 @@
+html {
+  scroll-behavior: smooth;
+}
+
+
+.inner {
+  max-width: 100%;
+  width: 990px;
+  margin: 0 auto;
+}
+
+.sec_title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-top: 200px;
+}
+
+
+
+
+
+//header
+#header {
+  margin-bottom: 90px;
+  width: 990px;
+& .top_1{
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  margin-top: 80px;
+  & ul {
+    display: flex;
+    list-style: none;
+    & li {
+      margin-right: 10px;
+      & img {
+        width: 32px;
+      }
+    }
+  }
+}
+& .top_2 {
+  margin-top: 40px;
+  & ul {
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+    & li {
+      margin-right: 40px;
+      &:last-child {
+        margin-right: 20px;
+      }
+    }
+  }
+}
+& a{
+  color: black;
+  text-decoration: none;
+  & h1 {
+    font-size: 2.5rem;
+    font-family: 'Merriweather', serif;
+  }
+}
+}
+
+//mainvisual
+
+.mainvisual {
+  background-color:#2b2b221c;
+  min-width: 990px;
+& .block {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 400px;
+  width: 990px;
+  margin: 0 auto;
+  & .self_introduction {
+    font-size: 1.5rem;
+    & dt {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+  }
+  & img {
+    border-radius: 50%;
+    width: 200px;
+    height: 220px;
+    object-fit: cover;
+    margin-left: 40px;
+  }
+}
+}
+
+//works
+#works{
+  min-width: 990px;
+  & .portfolio { 
+    list-style: none;
+    & li {
+      box-sizing:  border-box;
+      border: 1px solid #e0e0e0;
+      vertical-align: bottom;
+      width: 30%;
+      margin-top: 40px;
+      margin-right: 40px;
+      display: inline-block;
+     &:nth-child(3n) {
+       margin-right:0;
+     }
+     & a{
+      & img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+      }
+    }
+    }
+  }
+}
+
+//skill
+
+#skill {
+  & #skill_box {
+    display: flex;
+    justify-content: space-between;
+   & .skill, .tool {
+     & h3 {
+       font-size: 3rem;
+       font-family: "Open Sans", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
+     }
+     & li {
+       font-size: 2rem;
+       font-family: Verdana, Geneva, Tahoma, sans-serif;
+       margin-bottom: 30px;
+     }
+   }
+  }
+}
+
+//footer
+#footer {
+  margin-top: 140px;
+  .arrow {
+    width: 20px;
+    height: 20px;
+    border: 2px solid;
+    border-color: #565656 #565656 transparent transparent;
+    transform: rotate(-45deg);
+    margin: 0 auto;
+  }
+  & #footer_box{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-around;
+    & ul {
+      display: flex;
+      list-style: none;
+      & li {
+        margin-right: 30px;
+        & a {
+          text-decoration: none;
+          color: black;
+        }
+      }
+    }
+  }
+}

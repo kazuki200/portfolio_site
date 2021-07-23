@@ -1,0 +1,207 @@
+@charset "UTF-8";
+html {
+  scroll-behavior: smooth;
+}
+
+.inner {
+  max-width: 100%;
+  width: 990px;
+  margin: 0 auto;
+}
+
+.sec_title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-top: 200px;
+}
+
+#header {
+  margin-bottom: 90px;
+  width: 990px;
+}
+
+#header .top_1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 80px;
+}
+
+#header .top_1 ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+#header .top_1 ul li {
+  margin-right: 10px;
+}
+
+#header .top_1 ul li img {
+  width: 32px;
+}
+
+#header .top_2 {
+  margin-top: 40px;
+}
+
+#header .top_2 ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+#header .top_2 ul li {
+  margin-right: 40px;
+}
+
+#header .top_2 ul li:last-child {
+  margin-right: 20px;
+}
+
+#header a {
+  color: black;
+  text-decoration: none;
+}
+
+#header a h1 {
+  font-size: 2.5rem;
+  font-family: 'Merriweather', serif;
+}
+
+.mainvisual {
+  background-color: #2b2b221c;
+  min-width: 990px;
+}
+
+.mainvisual .block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 400px;
+  width: 990px;
+  margin: 0 auto;
+}
+
+.mainvisual .block .self_introduction {
+  font-size: 1.5rem;
+}
+
+.mainvisual .block .self_introduction dt {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.mainvisual .block img {
+  border-radius: 50%;
+  width: 200px;
+  height: 220px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-left: 40px;
+}
+
+#works {
+  min-width: 990px;
+}
+
+#works .portfolio {
+  list-style: none;
+}
+
+#works .portfolio li {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 1px solid #e0e0e0;
+  vertical-align: bottom;
+  width: 30%;
+  margin-top: 40px;
+  margin-right: 40px;
+  display: inline-block;
+}
+
+#works .portfolio li:nth-child(3n) {
+  margin-right: 0;
+}
+
+#works .portfolio li a img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#skill #skill_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#skill #skill_box .skill h3, #skill #skill_box .tool h3 {
+  font-size: 3rem;
+  font-family: "Open Sans", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
+}
+
+#skill #skill_box .skill li, #skill #skill_box .tool li {
+  font-size: 2rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-bottom: 30px;
+}
+
+#footer {
+  margin-top: 140px;
+}
+
+#footer .arrow {
+  width: 20px;
+  height: 20px;
+  border: 2px solid;
+  border-color: #565656 #565656 transparent transparent;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  margin: 0 auto;
+}
+
+#footer #footer_box {
+  margin-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#footer #footer_box ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+#footer #footer_box ul li {
+  margin-right: 30px;
+}
+
+#footer #footer_box ul li a {
+  text-decoration: none;
+  color: black;
+}
+/*# sourceMappingURL=portfolio_site.css.map */
