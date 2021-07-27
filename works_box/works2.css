@@ -67,4 +67,47 @@ main p {
   font-weight: 900;
   font-family: 'Times New Roman', Times, serif;
 }
+
+#footer {
+  background: #4c4c4c;
+  height: 100px;
+}
+
+#footer p {
+  text-align: center;
+  color: #dcdcdc;
+  font-size: 1.5rem;
+  padding-top: 30px;
+}
+
+@media screen and (max-width: 700px) {
+  .wrapper {
+    width: 100%;
+  }
+  .sec_title {
+    font-size: 1.3rem;
+  }
+  .sec_title_2 {
+    font-size: 1rem;
+  }
+  main .main_box .period dl dt {
+    font-size: 1.2rem;
+  }
+  main .main_box .period dl dd {
+    font-size: 1rem;
+  }
+  main .main_box .tool ul li:first-child {
+    margin-top: 10px;
+  }
+  main p {
+    font-size: 0.9rem;
+  }
+  #footer {
+    height: 50px;
+  }
+  #footer p {
+    padding-top: 15px;
+    font-size: 0.9rem;
+  }
+}
 /*# sourceMappingURL=works2.css.map */
