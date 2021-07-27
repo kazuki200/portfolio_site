@@ -141,7 +141,7 @@ html {
 
 #works .portfolio li a img {
   width: 100%;
-  height: auto;
+  height: 280px;
   -o-object-fit: cover;
      object-fit: cover;
 }

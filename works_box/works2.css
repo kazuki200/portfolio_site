@@ -1,0 +1,70 @@
+@charset "UTF-8";
+.wrapper {
+  width: 70%;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.sec_title {
+  font-size: 3rem;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.sec_title_2 {
+  font-size: 2.8rem;
+  border-bottom: solid black;
+  padding-bottom: 10px;
+}
+
+img {
+  width: 100%;
+  vertical-align: bottom;
+  border: solid black 3px;
+}
+
+main .period dl dt {
+  font-size: 1.8rem;
+}
+
+main .period dl dd {
+  font-size: 1.4rem;
+  font-family: "クレー";
+}
+
+main .tool ul {
+  list-style: none;
+  font-family: "クレー";
+  font-size: 1.4rem;
+}
+
+main .tool ul li:first-child {
+  margin-top: -30px;
+}
+
+main .access {
+  margin-top: 15px;
+}
+
+main .access a {
+  padding: 8px 11px 11px;
+  background-color: #4c4c4c;
+  border: #4c4c4c solid 1px;
+  color: #dcdcdc;
+  font-size: 1.3rem;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+main .access a:hover {
+  background-color: #dcdcdc;
+  color: #4c4c4c;
+}
+
+main p {
+  font-size: 1.5rem;
+  font-weight: 900;
+  font-family: 'Times New Roman', Times, serif;
+}
+/*# sourceMappingURL=works2.css.map */
