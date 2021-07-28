@@ -18,6 +18,7 @@ html {
 #header {
   margin-bottom: 90px;
   width: 990px;
+  min-width: 990px;
 }
 
 #header .top_1 {
@@ -146,6 +147,10 @@ html {
      object-fit: cover;
 }
 
+#skill {
+  min-width: 990px;
+}
+
 #skill #skill_box {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -168,6 +173,7 @@ html {
 
 #footer {
   margin-top: 140px;
+  min-width: 990px;
 }
 
 #footer .arrow {
@@ -203,5 +209,118 @@ html {
 #footer #footer_box ul li a {
   text-decoration: none;
   color: black;
+}
+
+@media screen and (max-width: 760px) {
+  #header .top_1 ul li {
+    display: none;
+  }
+  #header .top_2 ul li {
+    display: none;
+  }
+  #header .menuButton {
+    display: block;
+    height: 150px;
+    width: 150px;
+    background: #5B5B5B;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 3;
+  }
+  #header .menuButton div {
+    height: 1px;
+    width: 60%;
+    background: #ccc;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    -webkit-transform-origin: 0% 50%;
+            transform-origin: 0% 50%;
+  }
+  #header .menuButton div:nth-of-type(1) {
+    -webkit-transform: translate(-50%, -30px);
+            transform: translate(-50%, -30px);
+  }
+  #header .menuButton div:nth-of-type(3) {
+    -webkit-transform: translate(-50%, 30px);
+            transform: translate(-50%, 30px);
+  }
+  #header .menuButton.active div:nth-of-type(1) {
+    -webkit-transform: rotate(45deg) translate(-50%, 0);
+            transform: rotate(45deg) translate(-50%, 0);
+  }
+  #header .menuButton.active div:nth-of-type(2) {
+    opacity: 0;
+  }
+  #header .menuButton.active div:nth-of-type(3) {
+    -webkit-transform: rotate(-45deg) translate(-50%, 0);
+            transform: rotate(-45deg) translate(-50%, 0);
+  }
+  #header nav {
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: .3s;
+    transition: .3s;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #5B5B5B;
+    width: 400px;
+    height: 100%;
+    z-index: 2;
+  }
+  #header nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 100%;
+    font-size: 3rem;
+    list-style: none;
+  }
+  #header nav ul li:not(:first-of-type) {
+    margin-top: 30px;
+  }
+  #header nav.active {
+    opacity: 1;
+    visibility: visible;
+  }
+  #header .mask {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1;
+    -webkit-transition: .3s;
+    transition: .3s;
+  }
+  #header .mask.active {
+    opacity: 0.7;
+    visibility: visible;
+  }
+}
+
+@media screen and (max-width: 760px) and (min-width: 761px) {
+  #nav {
+    display: none;
+  }
 }
 /*# sourceMappingURL=portfolio_site.css.map */
